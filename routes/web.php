@@ -10,7 +10,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\DepartmentController;
 
 
-Route::get('/employees', [EmployeeController::class, 'index'])->name('employees.index');
+
 Route::resource('employees', EmployeeController::class);
 Route::resource('departments', DepartmentController::class);
 Route::get('/dashboard', function () {
